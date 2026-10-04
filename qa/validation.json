@@ -27,7 +27,6 @@
   "transparent_rgb_residue_pixels": 0,
   "chroma_fringe_pixels": 0,
   "preflight": "passed for the exact public WebP bytes",
-  "animation_quality_gate_ok": true,
   "jump": {
     "idle_baseline": 201,
     "jump_baselines": [
@@ -44,12 +43,13 @@
     "reviewers": 3,
     "pairs": 14,
     "ok": true,
-    "unresolved": 0
+    "unresolved": 0,
+    "scope": "Direction classification only; smooth pose transitions not established"
   },
   "visual_review": {
     "white_black_edges": "No visible green residue or white matte in reviewed frames",
-    "look_boundary": "Down-right to centered bow accepted in sequential-frame review; torso and shoes stable",
-    "limitation": "Independent boundary review did not view real-time continuous playback"
+    "look_boundary": "Earlier pose classification accepted; detailed review identified head/hair outline discontinuity at 157.5->180 degrees; shoes and torso remain stable",
+    "limitation": "Normal-speed continuous playback was not watched; actual Codex display, pointer following and state switching remain unverified"
   },
   "reviewed_warnings": [
     "look direction 045 accepted with a reviewed warning",
@@ -58,15 +58,54 @@
     "look direction 225 accepted with a reviewed warning",
     "157.5->180 diff is a local outlier (3634 pixels vs neighbor average 2272)"
   ],
-  "runtime_verification": "Native app display, following and state switching unverified",
+  "runtime_verification": "Normal-speed continuous playback, actual Codex display, pointer following and state switching unverified",
   "metadata": "Public images re-encoded without EXIF, XMP, comments, C2PA or embedded source paths; video metadata stripped, technical container fields retained",
   "desktop_manifest_fields_verified": true,
   "offline_bundled_pet_comparison": {
     "count": 9,
     "display_size_px": 112,
-    "geometry_and_sequence": "No clear break found",
-    "timing": "Common frame counts and cycle timing matched",
-    "state_readability": "Idle, active work, review and failure are restrained; equivalence to bundled pets not claimed",
+    "geometry_and_sequence": "Basic geometry and state/gaze order checked; continuity issues remain as listed in detailed_animation_review",
+    "timing": "Common frame counts and configured cycle timing matched; actual playback timing unverified",
+    "state_readability": "Active work, waiting for input and review are hard to distinguish; failure can look like a bow; equivalence to bundled pets not claimed",
     "third_party_comparison_media_included": false
+  },
+  "animation_review_status": "Frame-by-frame and timing-setting review completed; known continuity and state-readability issues remain; not a full animation-quality pass",
+  "detailed_animation_review": {
+    "date": "2026-10-04",
+    "method": "Frame-by-frame inspection and timing-setting review",
+    "coverage": {
+      "animation_states": 9,
+      "frames": 73,
+      "gaze_directions": 16,
+      "loop_joins": "inspected in frames and settings"
+    },
+    "structural_observation": "No missing/clipped frames or major face/limb breakdown found",
+    "known_limitations": [
+      {
+        "id": "jump_to_idle_hair_width",
+        "finding": "Hair width narrows abruptly when jumping returns to idle"
+      },
+      {
+        "id": "gaze_157_5_to_180_outline",
+        "finding": "Head/hair outline jumps between gaze directions 157.5 and 180 degrees"
+      },
+      {
+        "id": "idle_closed_eye_hold",
+        "finding": "Configured closed-eye hold is about 1.5 seconds",
+        "estimated_seconds": 1.5,
+        "basis": "Frame/timing settings; not measured normal-speed playback"
+      },
+      {
+        "id": "state_readability",
+        "finding": "Active work, waiting for input and review are hard to distinguish; failure can look like a bow"
+      }
+    ],
+    "unverified": [
+      "Normal-speed continuous playback",
+      "Actual Codex on-screen display",
+      "Pointer following",
+      "Native state switching"
+    ],
+    "artwork_modified": false
   }
 }

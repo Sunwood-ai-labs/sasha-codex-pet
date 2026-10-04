@@ -45,7 +45,14 @@ The first nine rows are idle, moving right, moving left, waving, jumping, failur
 
 The public PNG and WebP decode to identical RGBA pixels. See [validation details](qa/validation.json) and [asset checksums](qa/assets.json). File-format validation and visual review do not by themselves prove operation in every app version.
 
-Known limitation: idle, active work, review and failure use gentle changes and are less distinct than some bundled pets. Offline comparison passed geometry and sequence checks; actual in-app display, following and state switching remain unverified.
+Frame-by-frame and timing-setting review covered all nine states, 73 frames, sixteen gaze directions and loop joins. No missing or clipped frames or major face/limb breakdown was found. This is not a full animation-quality pass: known issues remain:
+
+- Hair width narrows abruptly when jumping returns to idle
+- The head/hair outline jumps between gaze directions 157.5° and 180°
+- The idle closed-eye hold is about 1.5 seconds according to the timing settings
+- Active work, waiting for input and review are hard to distinguish; failure can look like a bow
+
+Normal-speed continuous playback, actual Codex on-screen display, pointer following and state switching remain unverified. See the [compatibility status](docs/COMPATIBILITY.md) for the review scope.
 
 ![White and black background comparisons](preview/white-black-stills.png)
 
