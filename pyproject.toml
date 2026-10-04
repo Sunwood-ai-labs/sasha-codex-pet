@@ -1,0 +1,9 @@
+[project]
+name = "sasha-codex-pet-checks"
+version = "0.1.0"
+description = "Distribution checks for Sasha's animated sprite package"
+requires-python = ">=3.11"
+dependencies = ["Pillow==12.3.0"]
+
+[tool.uv]
+package = false

@@ -1,0 +1,72 @@
+{
+  "format": "v2",
+  "width": 1536,
+  "height": 2288,
+  "cell": [
+    192,
+    208
+  ],
+  "frames_per_row": [
+    6,
+    8,
+    8,
+    4,
+    5,
+    8,
+    6,
+    6,
+    6,
+    8,
+    8
+  ],
+  "required_frames": 73,
+  "unused_transparent_cells": 15,
+  "asset_structure_ok": true,
+  "alpha_preserved": true,
+  "lossless_png_webp_pixel_equality": true,
+  "transparent_rgb_residue_pixels": 0,
+  "chroma_fringe_pixels": 0,
+  "preflight": "passed for the exact public WebP bytes",
+  "animation_quality_gate_ok": true,
+  "jump": {
+    "idle_baseline": 201,
+    "jump_baselines": [
+      202,
+      182,
+      163,
+      189,
+      202
+    ],
+    "airborne_lift_pixels": 39,
+    "landing_delta_pixels": 1
+  },
+  "blind_direction_review": {
+    "reviewers": 3,
+    "pairs": 14,
+    "ok": true,
+    "unresolved": 0
+  },
+  "visual_review": {
+    "white_black_edges": "No visible green residue or white matte in reviewed frames",
+    "look_boundary": "Down-right to centered bow accepted in sequential-frame review; torso and shoes stable",
+    "limitation": "Independent boundary review did not view real-time continuous playback"
+  },
+  "reviewed_warnings": [
+    "look direction 045 accepted with a reviewed warning",
+    "look direction 067.5 accepted with a reviewed warning",
+    "look direction 112.5 accepted with a reviewed warning",
+    "look direction 225 accepted with a reviewed warning",
+    "157.5->180 diff is a local outlier (3634 pixels vs neighbor average 2272)"
+  ],
+  "runtime_verification": "Native app display, following and state switching unverified",
+  "metadata": "Public images re-encoded without EXIF, XMP, comments, C2PA or embedded source paths; video metadata stripped, technical container fields retained",
+  "desktop_manifest_fields_verified": true,
+  "offline_bundled_pet_comparison": {
+    "count": 9,
+    "display_size_px": 112,
+    "geometry_and_sequence": "No clear break found",
+    "timing": "Common frame counts and cycle timing matched",
+    "state_readability": "Idle, active work, review and failure are restrained; equivalence to bundled pets not claimed",
+    "third_party_comparison_media_included": false
+  }
+}

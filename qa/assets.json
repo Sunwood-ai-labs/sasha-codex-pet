@@ -1,0 +1,50 @@
+{
+  "decoded_rgba_sha256": "70acd1b5cdf8028ae09ee20bf6527a53ee703652964df79ed3bccf75cbc313f1",
+  "files": [
+    {
+      "path": "pet.json",
+      "sha256": "5f383fe671bcf42d3e0907f1bac3d49f58b5facc03053b09893507dff57871cd",
+      "bytes": 224
+    },
+    {
+      "path": "spritesheet.webp",
+      "sha256": "9f93815828f2927a84dc236105ce4b662e013606241aa9d4cdf4bd3350210891",
+      "bytes": 1920812
+    },
+    {
+      "path": "assets/spritesheet.png",
+      "sha256": "72cb6b0a88228460bdea288bae40962de5c7109e00fb6e429005d7c52dd46a2e",
+      "bytes": 2704017
+    },
+    {
+      "path": "preview/contact-sheet.png",
+      "sha256": "f30d31fdf6ecde6c1add8c498ad41543899e49ee5eb9d36b9cf4154d50d396bb",
+      "bytes": 644513
+    },
+    {
+      "path": "preview/directions.png",
+      "sha256": "f4725cd45d627dfd218e583292126c2b74e52cb352fec7bc533d2596df2354d4",
+      "bytes": 807732
+    },
+    {
+      "path": "preview/idle.gif",
+      "sha256": "46acb6a437a994be9af736cfe42ff69d951af132b8f58f63e0d6598c8d0341b6",
+      "bytes": 59582
+    },
+    {
+      "path": "preview/sasha.png",
+      "sha256": "9f9bbaa844ce9027a750d4e7216ba0c6e823ee287b16a87d40643d225092df14",
+      "bytes": 39603
+    },
+    {
+      "path": "preview/white-black-motion.mp4",
+      "sha256": "b068928e22d1a63dbb63d5b1121449fe75a08858d644160dfe187bec72fb7f18",
+      "bytes": 302998
+    },
+    {
+      "path": "preview/white-black-stills.png",
+      "sha256": "2d60c442d003c984e7d19072601d2a7a1c0dae1901c21ba65f6b467f862020e2",
+      "bytes": 502845
+    }
+  ]
+}
